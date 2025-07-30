@@ -1,0 +1,142 @@
+{
+  "analysis_timestamp": "2025-07-29T23:40:00Z",
+  "project_structure": {
+    "project_overview": {
+      "total_python_files": 44,
+      "total_lines_of_code": 19227,
+      "average_file_size": 436,
+      "total_classes": 76,
+      "total_functions": 341
+    },
+    "code_metrics": {
+      "complexity_indicators": {
+        "large_classes": 11,
+        "long_functions": 4,
+        "deep_file_structure": 0
+      },
+      "maintainability_score": 2.3
+    },
+    "dependency_analysis": {
+      "total_unique_imports": 79,
+      "most_used_imports": {
+        "datetime": 30,
+        "loguru": 23,
+        "json": 22,
+        "typing": 22,
+        "config.settings": 18,
+        "sqlalchemy.orm": 17,
+        "config.database": 17,
+        "src.models.hotel": 11,
+        "os": 10,
+        "pandas": 9
+      },
+      "external_dependencies": {
+        "data_processing": 15,
+        "web_framework": 5,
+        "database": 9,
+        "async_processing": 9
+      }
+    },
+    "architecture_patterns": {
+      "core_business_classes": 14,
+      "service_classes": 4,
+      "analyzer_classes": 5,
+      "model_classes": 76
+    },
+    "code_quality_issues": [],
+    "improvement_suggestions": [
+      "🔧 发现多个大型类，建议拆分为更小的单一职责类",
+      "🏗️ 分析器类过多，建议整合到统一的分析服务中"
+    ]
+  },
+  "business_patterns": {
+    "roi_calculation_patterns": [
+      {
+        "file": "src/core/roi_calculator.py",
+        "calculation_methods": 1,
+        "financial_indicators": [
+          "npv",
+          "irr",
+          "roi",
+          "payback"
+        ]
+      },
+      {
+        "file": "src/core/investment_analyzer.py",
+        "calculation_methods": 1,
+        "financial_indicators": [
+          "npv",
+          "irr",
+          "roi",
+          "payback"
+        ]
+      },
+      {
+        "file": "src/core/yuyao_investment_analyzer.py",
+        "calculation_methods": 0,
+        "financial_indicators": [
+          "npv",
+          "irr",
+          "roi",
+          "payback"
+        ]
+      },
+      {
+        "file": "src/models/investment_analysis.py",
+        "calculation_methods": 2,
+        "financial_indicators": [
+          "npv",
+          "irr",
+          "roi",
+          "payback"
+        ]
+      },
+      {
+        "file": "src/api/routes/investment_analysis.py",
+        "calculation_methods": 1,
+        "financial_indicators": [
+          "npv",
+          "irr",
+          "roi",
+          "payback"
+        ]
+      }
+    ],
+    "data_collection_patterns": [
+      {
+        "file": "enhanced_data_collector.py",
+        "async_methods": 3,
+        "api_calls": 0,
+        "data_sources": [
+          "ctrip",
+          "meituan"
+        ]
+      },
+      {
+        "file": "src/services/data_collector.py",
+        "async_methods": 17,
+        "api_calls": 2,
+        "data_sources": [
+          "ctrip",
+          "meituan",
+          "gaode",
+          "baidu"
+        ]
+      }
+    ],
+    "analysis_patterns": [],
+    "api_patterns": []
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "🔧 发现多个大型类，建议拆分为更小的单一职责类",
+      "🏗️ 分析器类过多，建议整合到统一的分析服务中"
+    ],
+    "architectural_improvements": [],
+    "performance_optimizations": [
+      "增加异步处理能力",
+      "实现数据库连接池",
+      "添加缓存层"
+    ]
+  }
+}
