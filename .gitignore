@@ -126,3 +126,9 @@ tmp/
 test_local.py
 debug_*.py
 EOF < /dev/null
+
+# 本地配置恢复脚本添加的规则
+config/local_settings.py
+*.local
+*_local.py
+local_*.json
